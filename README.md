@@ -2,6 +2,8 @@
 # Corso-A-2022-2023
 ## Benvenuti nella repository di Lorenzo (Sbro)
 
+Ogni tanto pubblicherò esercizi di programmazione e se riesco i PDF delle altre materie.
+
 Questo è uno spazio pubblico in cui pubblicherò il materiale personale che sarà consultabile da tutti.
 
 Ogni file sarà commentabile in caso di dubbi e/o correzioni.
@@ -11,5 +13,3 @@ Ogni file sarà commentabile in caso di dubbi e/o correzioni.
 - [Logica](https://github.com/Corso-A-2022-2023/Sbro03/tree/main/Logica)
 - [Matematica discreta](https://github.com/Corso-A-2022-2023/Sbro03/tree/main/Matematica%20Discreta)
 - [Calcolo matriciale e ricerca operativa](https://github.com/Corso-A-2022-2023/Sbro03/tree/main/CalcoloMatriciale_RicercaOperativa)
-
-**BUON LAVORO A TUTTI!** :sparkling_heart:
