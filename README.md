@@ -2,7 +2,7 @@
 # Corso-A-2022-2023
 ## Benvenuti nella repository di Lorenzo (Sbro)
 
-Questo è uno spazio pubblico in cui pubblicherò il materiale personale che sarà consultabile a tutti.
+Questo è uno spazio pubblico in cui pubblicherò il materiale personale che sarà consultabile da tutti.
 
 Ogni file sarà commentabile in caso di dubbi e/o correzioni.
 
