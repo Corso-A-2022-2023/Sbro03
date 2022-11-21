@@ -17,8 +17,9 @@ public class Circonferenza {
         // Calcolo la circonferenza
         // ESERCIZIO: completare il codice
         //??? circonferenza = ????
-        double circonferenza = 0;
-		circonferenza = 2*raggio*PI_GRECO;
+		
+		double circonferenza = 2* (PI_GRECO * raggio);
+                
         System.out.println("La circonferenza del cerchio e': " + circonferenza);
     }
 }
