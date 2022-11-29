@@ -92,15 +92,37 @@ public class MetodiRicorsiviSuArray{
 	//Esercizio 8
 	
 	public static int[] filtraPari(int[] a){
-		if(a == null || a.length == 0)
-			return null;
-		return filtraPari(a, 0, a.length-1, 0);
-	}
-	
-	public static int[] filtraPari(int[] a, int sx, int dx, int count){
+		if(a == null)
+		  return null;
+		if(a.length == 0)
+		  return new int[0];
+		return filtraPariDic(a, 0, a.length-1);
+	  }
+  
+  public static int[] filtraPariDic(int[] a, int i, int j){
+    if(i == j) {
+      if(a[i]%2 == 0) {
+        int[] p = new int[1];
+        p[0] = a[i];
+        return p;
+      }
+      else 
+        return new int[0];
+    }
+    int m = (i+j)/2;
+    return concatena(filtraPariDic(a, i, m), filtraPariDic(a, m+1, j));      
+  }
+
+  public static int[] concatena(int[] a, int[] b){
+    int[] array = new int[a.length + b.length];
+    for(int i = 0; i < a.length; i++)
+      array[i] = a[i];
+    for(int i = 0; i < b.length; i++)
+      array[i + a.length] = b[i];
+    
+    return array;
+  }
 		
-	}
-	
 	public static void main(String[] args){
 		
 		/*
