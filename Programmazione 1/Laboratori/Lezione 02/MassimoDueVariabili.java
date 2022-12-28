@@ -1,15 +1,13 @@
-import java.util.Scanner;
 /** Massimo tra due variabili */
 public class MassimoDueVariabili {
 
     public static void main(String[] args) {
-		Scanner tastiera = new Scanner(System.in);
         // Massimo tra x e y 
         // Dopo il test la variabile max contiene il massimo tra x e y
-		System.out.println("Inserisci x : ");
-		int x = tastiera.nextInt();
-		System.out.println("Inserisci x : ");
-		int y = tastiera.nextInt();
+		System.out.println("Mettere 2 valori");
+		
+		int x = SIn.readLineInt();
+		int y = SIn.readLineInt();
         int max;
         if (x > y) { // se x > y vero
             max = x;
@@ -17,6 +15,8 @@ public class MassimoDueVariabili {
             max = y;
         }
         System.out.println("x: " + x + ", y: " + y + ", max: " + max);
+        
+        
         // Secondo modo: assegnamo un valore iniziale a max pari a y, e
         // cambiamo max nel caso in cui x fosse maggiore di y
         max = y;
@@ -36,19 +36,24 @@ public class MassimoDueVariabili {
         
         
         // Versione con indicatore booleano
-        x = 6;
-        y = 10;
         boolean yIsMax = true; // indica che il massimo è in y
         if (x > y) { // se x > y vero
             yIsMax = false;
         }
+		if(yIsMax){
+			max = y;
+		}else{
+			max = x;
+		}
         System.out.println("x: " + x + ", y: " + y + ", yIsMax: " + yIsMax);
+		System.out.println();
+		System.out.println("x: " + x + ", y: " + y + ", max: " + max);
 
         
         
         // ESERCIZIO: stampare il massimo tra x e y, usando il valore di yIsMax 
         // per decidere quale variabile stampare.
-
+        
         
         
         // ESERCIZIO: modificare il codice della classe per chiedere all'inizio 
