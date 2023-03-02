@@ -8,8 +8,6 @@ Questo è uno spazio pubblico in cui pubblicherò il materiale personale che sar
 
 Ogni file sarà commentabile in caso di dubbi e/o correzioni.
 
-PS. Non ho molti appunti in digitale però metto tutti gli esercizi/temi d'esame di programmazione
-
 ## INDICE
 - [Programmazione 1](https://github.com/Corso-A-2022-2023/Sbro03/tree/main/Programmazione%201)
 - [Logica](https://github.com/Corso-A-2022-2023/Sbro03/tree/main/Logica)
