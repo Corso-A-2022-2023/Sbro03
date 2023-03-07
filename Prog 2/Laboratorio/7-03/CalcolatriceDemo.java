@@ -11,12 +11,14 @@ class Calcolatrice { //classe non eseguibile e non pubblica
     // le posizioni occupate dell'array hanno indice: 0, 1, ..., size-1
     private int size;
 
+
+    //Modifiche per esercizio 6
     //Metodo set() per il campo stack
     public void setCalcolatrice(int[] a, int s){
 	    stack = a;
 	    size = s;
     }
-
+    //Fine modifiche per esercizio 6
 
     // push(x): aggiunge un intero x allo stack dopo la parte utilizzata
     // e aumenta di 1 la parte di stack utilizzata (variabile size)
@@ -91,11 +93,14 @@ public int esegui(String istruzioni) {
 public class CalcolatriceDemo {
     public static void main(String[] args) {
         Calcolatrice C = new Calcolatrice();
+
+        //Modifiche per esercizio 6
         int [] stack = new int[100];
         int size = 0;
         C.setCalcolatrice(stack, size);
+        //Fine modifiche per esercizio 6
 
-        /*//Esercizio 1
+        //Esercizio 1
         System.out.println("Esercizio 1\n");
         System.out.println("Calcolo espressione (15 + 16) x 17");
         System.out.println(C.esegui( "96+97++98+*" ) + "\n");
@@ -133,7 +138,7 @@ public class CalcolatriceDemo {
         System.out.println("Esercizio 5"); 
         System.out.println("0 e 1");
         System.out.println(C.esegui( "27*2%") + "\n");
-        System.out.println(C.esegui( "77*2%") + "\n");*/
+        System.out.println(C.esegui( "77*2%") + "\n");
 
         //Esercizio 6
         System.out.println("Esercizio 6"); 
