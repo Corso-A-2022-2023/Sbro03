@@ -1,10 +1,10 @@
 public class SommaInteri{
-	public static void main (String [] args){
-		System.out.println("Insersci numero 1 : ");
-		int num1 = SIn.readLineInt();
-		System.out.println("Insersci numero 2 : ");
-		int num2 = SIn.readLineInt();
-		int sommaTot = num1+num2;
-		System.out.println("La somma tra loro due e : "+sommaTot);
+	public static void main(String[] args){
+		//Inizializzo i 2 valori x e y con la classe SIn
+		int x = SIn.readLineInt();
+		int y = SIn.readLineInt();
+		int sum;
+		sum = x + y;
+		System.out.println("x + y = " + sum);
 	}
 }

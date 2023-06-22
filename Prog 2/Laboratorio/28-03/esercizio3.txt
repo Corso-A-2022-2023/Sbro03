@@ -1,0 +1,44 @@
+Si può modificare un triangolo senza i metodi translate() e rotate().
+Basta creare dei metodi set() per modificare le coordinate dei punti del triangolo.
+
+Per la soluzione dell'esercizio scrivo direttamente qua sotto per evitare confusione
+
+Per la classe MutableTriangle bisogna chiamare il metodo setX e setY che sono nella 
+classe MutablePoint
+
+class MutableTriangle{
+   ...
+   public void setA(double x, double y){
+      this.a.setX(x);
+      this.a.setY(y);
+   }
+
+   public void setB(double x, double y){
+      this.b.setX(x);
+      this.b.setY(y);
+   }
+
+   public void setC(double x, double y){
+      this.c.setX(x);
+      this.c.setY(y);
+   }
+}
+
+Per la classe ImmutableTriangle, il concetto è lo stesso, solo che in questo i metodi set
+cambiano. Questo perchè i metodi di ImmutablePoint e ImmutableTriangle ritornano un nuovo oggetto.
+
+class ImmutableTriangle{
+   ...
+   public void setA(double x, double y){
+      this.a = new ImmutablePoint(x,y);
+   }
+
+   public void setB(double x, double y){
+      this.b = new ImmutablePoint(x,y);
+   }
+
+   public void setC(double x, double y){
+      this.c = new ImmutablePoint(x,y);
+   }
+
+}
